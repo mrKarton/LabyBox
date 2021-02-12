@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf57b10d08210149bebcb3259ba18c1, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  menuName: Bomber
+  menuPic: {fileID: -7748463151698865918, guid: 6075dd41471d13d4db1a1a10aa7e3a3e,
+    type: 3}
+  prefab: {fileID: 2311656760158991214, guid: f3581c8028b2e7449865eaff6ed7ae23, type: 3}
+  shotCount: 0
+  magazine: 0
+  maxBullets: 0
+  fireRate: 3

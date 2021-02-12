@@ -13,6 +13,8 @@ public class Move : MonoBehaviour
     public Transform b;
     public float aimRadius;
 
+    public bool canLook = true;
+
     public Transform head;
     private void Start()
     {
@@ -27,9 +29,12 @@ public class Move : MonoBehaviour
         Vector3 mouseWorldPosition = Camera.main.ScreenPointToRay(Input.mousePosition).direction;
         float mouseZ = mouseWorldPosition.y + 0.5f;
 
-        Vector3 position = transform.parent.position + new Vector3(mouseWorldPosition.x, 0, mouseZ) * sensitivity;
-        a.position = transform.parent.position + Vector3.ClampMagnitude(position - transform.parent.position, aimRadius);
-        head.LookAt(a);
+        if (canLook)
+        {
+            Vector3 position = transform.parent.position + new Vector3(mouseWorldPosition.x, 0, mouseZ) * sensitivity;
+            a.position = transform.parent.position + Vector3.ClampMagnitude(position - transform.parent.position, aimRadius);
+            head.LookAt(a);
+        }
 
         Vector3 pos = b.position;
         pos += b.forward * Input.GetAxis("Vertical") * Time.deltaTime * speed;

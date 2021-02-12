@@ -36,13 +36,14 @@ public class CameraMove : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.X))
         {
             if (viewType == ViewType.panorama) viewType = ViewType.action;
             else viewType = ViewType.panorama;
 
             
         }
+        /*
         Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
         if(Input.GetAxis("Mouse ScrollWheel") > 0)
         {
@@ -51,7 +52,7 @@ public class CameraMove : MonoBehaviour
         else if(Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             viewType = ViewType.panorama;
-        }
+        }*/
         if (viewType == ViewType.panorama)
         {
             overrideVector = panoramaPos;

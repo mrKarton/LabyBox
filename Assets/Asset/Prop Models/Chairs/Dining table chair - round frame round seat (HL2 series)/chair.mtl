@@ -1,0 +1,4 @@
+newmtl Model001_Material001
+map_Kd furniture_chair01a.png
+map_bump bumpmap_flat.png
+

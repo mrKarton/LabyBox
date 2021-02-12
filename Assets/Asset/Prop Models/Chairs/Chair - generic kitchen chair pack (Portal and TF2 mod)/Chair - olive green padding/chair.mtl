@@ -1,0 +1,8 @@
+newmtl Model001_Material001
+map_Kd bts_chair.png
+map_bump bumpmap_flat.png
+
+newmtl Model001_Material002
+map_Kd green_olive.png
+map_bump bumpmap_flat.png
+
